@@ -14,12 +14,5 @@ class GetRequester
     response.body
     
   end
-  
-  def program_school
-  programs = JSON.parse(self.get_response_body)
-  programs.collect do |program|
-    program["agency"]  
-  end
-end
- 
+
 end
